@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Card | Under Construction</title>
+    <title>Digital Card | Απόστολος Παπαναστασίου</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- instagram logo --> 
     <style>
         :root {
@@ -36,18 +36,20 @@
         .btn {
           display: block;
             width: 100%;
-            padding: 12px 24px;
+            padding: 14px 24px;
             margin-bottom: 15px;
             color: white;
             text-decoration: none;
             border-radius: 8px;
-            font-weight: bold; /* Bold σε όλα */
+            font-weight: 700 !important; /* Επιβολή ίδιου πάχους */
+            font-family: inherit;
             border: none;
             background: var(--gradient);
             background-size: 200% 200%;
             transition: transform 0.5s;
             cursor: pointer;
             box-sizing: border-box;
+            font-size: 0.95rem;
         }
         
         .btn:hover { transform: scale(1.05); }
@@ -101,24 +103,27 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-block;
+            margin-right: 8px;
+            font-size: 1.1rem;
+            vertical-align: middle;
         }
         
     </style>
 </head>
 <body>
     
-    <div class="container" style="text-align: center; padding: 20px;">
+    <div class="container">
       <img src="DigitalAtelierLogo.png" alt="Digital Atelier Logo" style="width: 350px; margin-bottom: 20px;">
 
-       <h1 style="margin-bottom: 5px;">Απόστολος Παπαναστασίου</h1>
+       <h1>Απόστολος Παπαναστασίου</h1>
         <p class="subtitle">Digital Growth Engineer</p>
         <p class="tagline">Web & Digital Management</p>
         
             <div class="actions" style="margin-top: 20px;">
-                <a href="contact.vcf" download class="btn" style="display: block; margin-bottom: 15px; border: none; background: var(--gradient); background-size: 200% 200%; transition: 0.5s;">
+                <a href="contact.vcf" download class="btn">
                 📥 Αποθήκευση Επαφής </a>
     
-                <a href="https://www.instagram.com/youridentityonline/" target="_blank" class="btn" style="display: block; margin-bottom: 15px; border: none; background: var(--gradient); background-size: 200% 200%; transition: 0.5s;"margin-bottom: 25px;">
+                <a href="https://www.instagram.com/youridentityonline/" target="_blank" class="btn">
                 <i class="fab fa-instagram"></i> Συνδεθείτε στο Instagram </a>
                 
                 <button onclick="toggleForm()" class="btn">
