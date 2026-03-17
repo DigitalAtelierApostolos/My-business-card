@@ -21,27 +21,27 @@
             margin: 0;
             text-align: center;
         }
-        .container { padding: 30px; max-width: 400px; width: 100%; }
+        .container { padding: 20px; width: 100%; max-width: 400px; }
         
-        /* 1. Το Λογότυπο στην κορυφή */
+        /* Λογότυπο με το λευκό πλαίσιο ακέραιο */
         .logo-img {
             width: 100%;
-            max-width: 250px; 
+            max-width: 320px; /* Ίδιο μέγεθος με το index.html */
             height: auto;
-            margin-bottom: 40px;
+            margin-bottom: 25px;
         }
         
-        /* 2. Ο Τίτλος και το Τικ στην ίδια γραμμή */
+        /* Επαναφορά μεγέθους τίτλου όπως στο index.html */
         .message-header {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
-            margin-bottom: 20px;
+            gap: 10px;
+            margin-bottom: 15px;
         }
         
         h1 { 
-            font-size: 2.2rem; 
+            font-size: 1.5rem; /* Ίδιο με το όνομα στην κάρτα */
             margin: 0;
             background: var(--gradient);
             -webkit-background-clip: text;
@@ -49,29 +49,30 @@
             font-weight: 800;
         }
         
-        .tick {
-            font-size: 2rem;
-        }
+        .tick { font-size: 1.3rem; }
         
-        /* 3. Το Γενικό Κείμενο */
+        /* Επαναφορά μεγέθους κειμένου */
         p { 
             color: #aaa; 
             line-height: 1.6; 
-            margin-bottom: 40px; 
-            font-size: 1.1rem; 
+            margin-bottom: 30px; 
+            font-size: 0.9rem; /* Πιο διακριτικό μέγεθος */
         }
         
         .btn {
             display: block;
-            padding: 16px 24px;
+            width: 100%;
+            padding: 14px 24px;
             color: white;
             text-decoration: none;
-            border-radius: 12px;
+            border-radius: 8px;
             font-weight: 700;
             background: var(--gradient);
             background-size: 200% 200%;
             transition: 0.4s;
-            font-size: 1rem;
+            font-size: 0.95rem; /* Ίδιο μέγεθος με τα κουμπιά της κάρτας */
+            box-sizing: border-box;
+            border: none;
         }
         .btn:hover { transform: scale(1.03); }
     </style>
