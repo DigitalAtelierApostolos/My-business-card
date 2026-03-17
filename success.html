@@ -21,53 +21,57 @@
             margin: 0;
             text-align: center;
         }
-        .container { padding: 30px; max-width: 400px; }
+        .container { padding: 30px; max-width: 400px; width: 100%; }
         
-        /* Στυλ για το Λογότυπο */
+        /* 1. Το Λογότυπο στην κορυφή */
         .logo-img {
             width: 100%;
-            max-width: 280px; /* Λίγο μικρότερο για να μην κυριαρχεί */
+            max-width: 250px; 
             height: auto;
-            margin-bottom: 25px;
+            margin-bottom: 40px;
         }
         
-        /* Στυλ για τον Τίτλο με το Τικ */
-        .title-group {
+        /* 2. Ο Τίτλος και το Τικ στην ίδια γραμμή */
+        .message-header {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px; /* Απόσταση τίτλου και τικ */
-            margin-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 20px;
         }
         
         h1 { 
-            font-size: 2rem; 
+            font-size: 2.2rem; 
             margin: 0;
             background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-weight: 800;
         }
         
-        .tick-icon {
-            font-size: 2.2rem;
-            color: #27E3D5; /* Χρώμα από το gradient */
+        .tick {
+            font-size: 2rem;
         }
         
-        /* Διορθωμένο Κείμενο (Πιο Γενικό) */
-        p { color: #aaa; line-height: 1.6; margin-bottom: 30px; font-size: 1rem; }
+        /* 3. Το Γενικό Κείμενο */
+        p { 
+            color: #aaa; 
+            line-height: 1.6; 
+            margin-bottom: 40px; 
+            font-size: 1.1rem; 
+        }
         
         .btn {
             display: block;
-            padding: 14px 24px;
+            padding: 16px 24px;
             color: white;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 12px;
             font-weight: 700;
             background: var(--gradient);
             background-size: 200% 200%;
             transition: 0.4s;
-            cursor: pointer;
-            border: none;
+            font-size: 1rem;
         }
         .btn:hover { transform: scale(1.03); }
     </style>
@@ -76,9 +80,9 @@
     <div class="container">
         <img src="DigitalAtelierLogo.png" alt="Digital Atelier Logo" class="logo-img">
         
-        <div class="title-group">
+        <div class="message-header">
             <h1>Ελήφθη!</h1>
-            <span class="tick-icon">✅</span>
+            <span class="tick">✅</span>
         </div>
         
         <p>Ευχαριστώ για την επικοινωνία. <br> Θα λάβετε απάντηση <strong>εντός της επόμενης εργάσιμης ημέρας</strong>.</p>
