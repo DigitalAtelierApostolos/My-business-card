@@ -23,16 +23,37 @@
         }
         .container { padding: 30px; max-width: 400px; }
         
-        .icon { font-size: 50px; margin-bottom: 20px; }
+        /* Στυλ για το Λογότυπο */
+        .logo-img {
+            width: 100%;
+            max-width: 280px; /* Λίγο μικρότερο για να μην κυριαρχεί */
+            height: auto;
+            margin-bottom: 25px;
+        }
+        
+        /* Στυλ για τον Τίτλο με το Τικ */
+        .title-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* Απόσταση τίτλου και τικ */
+            margin-bottom: 15px;
+        }
         
         h1 { 
             font-size: 2rem; 
-            margin-bottom: 15px;
+            margin: 0;
             background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
+        .tick-icon {
+            font-size: 2.2rem;
+            color: #27E3D5; /* Χρώμα από το gradient */
+        }
+        
+        /* Διορθωμένο Κείμενο (Πιο Γενικό) */
         p { color: #aaa; line-height: 1.6; margin-bottom: 30px; font-size: 1rem; }
         
         .btn {
@@ -45,15 +66,23 @@
             background: var(--gradient);
             background-size: 200% 200%;
             transition: 0.4s;
+            cursor: pointer;
+            border: none;
         }
         .btn:hover { transform: scale(1.03); }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icon">✅</div>
-        <h1>Ελήφθη!</h1>
-        <p>Ευχαριστώ για την επικοινωνία. <br> Θα λάβετε απάντηση στο email σας <strong>εντός της επόμενης εργάσιμης ημέρας</strong>.</p>
+        <img src="DigitalAtelierLogo.png" alt="Digital Atelier Logo" class="logo-img">
+        
+        <div class="title-group">
+            <h1>Ελήφθη!</h1>
+            <span class="tick-icon">✅</span>
+        </div>
+        
+        <p>Ευχαριστώ για την επικοινωνία. <br> Θα λάβετε απάντηση <strong>εντός της επόμενης εργάσιμης ημέρας</strong>.</p>
+        
         <a href="index.html" class="btn">Επιστροφή στην Κάρτα</a>
     </div>
 </body>
