@@ -34,18 +34,18 @@
         .tagline { font-size: 0.6rem; color: white; margin-bottom: 30px; }
         
         .btn {
-          display: flex;
-            align-items: center; 
-            justify-content: center; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
             width: 100%;
-            min-height: 55px; /* Δίνει σταθερό ύψος για να μην "κουνιέται" το κείμενο */
+            min-height: 55px;
             padding: 14px 24px;
             margin-bottom: 15px;
             color: white;
             text-decoration: none;
             border-radius: 8px;
-            font-weight: 700 !important; /* Επιβολή ίδιου πάχους */
+            font-weight: 700 !important;
             font-family: inherit;
             border: none;
             background: var(--gradient);
@@ -55,16 +55,20 @@
             box-sizing: border-box;
             font-size: 0.95rem;
             position: relative;
+            /* Η πινελιά που κάνει τη διαφορά */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
         }
 
-        /* Για να έχουν τα εικονίδια πάντα λίγο χώρο από το κείμενο */
+        /* Για τέλεια ευθυγράμμιση εικονιδίων/emojis */
         .btn i, .btn span {
             margin-right: 10px;
             display: inline-flex;
             align-items: center;
         }
         
-        .btn:hover { transform: scale(1.05); }
+        .btn:hover { 
+            transform: scale(1.05); 
+        }
 
         /* Κρυφή Φόρμα και Animation */
         #contact-section {
