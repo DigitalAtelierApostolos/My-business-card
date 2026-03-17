@@ -34,11 +34,12 @@
         .tagline { font-size: 0.6rem; color: white; margin-bottom: 30px; }
         
         .btn {
-          display: flex; /* Προσθήκη */
-            align-items: center; /* Προσθήκη */
-            justify-content: center; /* Προσθήκη */
-            gap: 10px; /* Απόσταση εικονιδίου-κειμένου */
+          display: flex;
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
             width: 100%;
+            min-height: 55px; /* Δίνει σταθερό ύψος για να μην "κουνιέται" το κείμενο */
             padding: 14px 24px;
             margin-bottom: 15px;
             color: white;
@@ -53,6 +54,14 @@
             cursor: pointer;
             box-sizing: border-box;
             font-size: 0.95rem;
+            position: relative;
+        }
+
+        /* Για να έχουν τα εικονίδια πάντα λίγο χώρο από το κείμενο */
+        .btn i, .btn span {
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
         }
         
         .btn:hover { transform: scale(1.05); }
@@ -132,13 +141,13 @@
         
             <div class="actions" style="margin-top: 20px;">
                 <button onclick="toggleForm()" class="btn">
-                <span>🤝</span> Εκδήλωση Ενδιαφέροντος </button>
+                🤝 Εκδήλωση Ενδιαφέροντος </button>
     
                 <a href="https://www.instagram.com/youridentityonline/" target="_blank" class="btn">
                 <i class="fab fa-instagram"></i> Ακολουθήστε στο Instagram </a>
                 
                 <a href="contact.vcf" download class="btn">
-                <span>📥</span> Αποθήκευση στοιχείων επικοινωνίας (vCard) </a>
+                📥 Αποθήκευση στοιχείων επικοινωνίας (vCard) </a>
             </div>
 
             <div id="contact-section">
