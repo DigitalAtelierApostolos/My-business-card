@@ -57,7 +57,7 @@
         /* Κρυφή Φόρμα και Animation */
         #contact-section {
             display: none; /* Αρχικά κρυφό */
-            margin-top: 35pxpx;
+            margin-top: 35px;
             background: #1a1a1a;
             padding: 20px;
             border-radius: 12px;
@@ -97,6 +97,14 @@
             color: #666;
         }
 
+        /* Διόρθωση για το Logo να μην "σπάει" σε μικρά κινητά */
+        .logo-img {
+            width: 100%;
+            max-width: 320px; /* Ιδανικό μέγεθος για mobile */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
         /* Gradient για το εικονίδιο Instagram */
         .fa-instagram {
             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -113,7 +121,7 @@
 <body>
     
     <div class="container">
-      <img src="DigitalAtelierLogo.png" alt="Digital Atelier Logo" style="width: 350px; margin-bottom: 20px;">
+      <img src="DigitalAtelierLogo.png" alt="Digital Atelier Logo" class="logo-img">
 
        <h1>Απόστολος Παπαναστασίου</h1>
         <p class="subtitle">Digital Growth Engineer</p>
